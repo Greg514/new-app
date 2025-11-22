@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import Nav from "../components/Nav"; // <-- Make sure the path is correct
+import Nav from "../components/Nav"; 
+import Hero from "../components/Hero"
 
 const App = () => {
   return (
     <>
       <Nav />
+      <br />
+      <Hero/>
     </>
   );
 };
