@@ -60,3 +60,17 @@
     width: 100%;
   }
 }
+
+.hero{
+ 
+  width:90%;
+  height:60vh;
+  margin-top:20px;
+  background-color:black;
+  position:relative;
+  left:65px;
+  border-radius:20px;
+}
+.hero h1{
+  color:white;
+}
