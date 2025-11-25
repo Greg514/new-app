@@ -8,28 +8,29 @@
 
 }
 .logo{
-    width:18%;
-    margin-left:4%;
+    width:20%;
+    margin-left:5%;
     cursor:pointer;
 }
 
 .nav-links ul {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   list-style: none;
-  padding: 0;
   margin-top: 40px;
+  position:relative;
+  right:50px;
 }
 
 .nav-links a {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 20px;
   position:relative;
   top:20px;
   margin-right:25px;
   text-decoration: none;
   color: black;
-  font-size:30px;
+  font-size:35px;
   border-radius: 6px;
   transition: 0.3s ease;
 }
@@ -42,7 +43,7 @@
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding: 20px 0;
   }
   .logo{
@@ -61,16 +62,32 @@
   }
 }
 
-.hero{
- 
-  width:90%;
-  height:60vh;
-  margin-top:20px;
-  background-color:black;
-  position:relative;
-  left:65px;
-  border-radius:20px;
+.hero {
+  width: 90%;
+  height: 60vh;
+  margin-top: 20px;
+  background-color: black;
+  position: relative;
+  left: 65px;
+  border-radius: 20px;
+
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* slight lift effect (optional) */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .hero h1{
   color:white;
 }
